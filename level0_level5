@@ -1,0 +1,77 @@
+Bandit Level 0
+
+Steps:
+
+Use SSH to connect: ssh bandit0@bandit.labs.overthewire.org -p 2220
+
+Password: bandit0
+
+Once logged in, use ls to list files.
+
+Find the readme file and read it: cat readme(the cat function allows the reading of file)
+
+Bandit Level 1
+Steps:
+
+Log in as bandit1 with the password from the previous level.
+
+Use ls to see files; find a file with no extension.
+
+Read the file: cat ~/[file name]
+
+Bandit Level 2
+Steps:
+
+Log in as bandit2.
+
+Use ls to list files; notice a filename with spaces.
+
+Read the file by quoting or escaping spaces:  cat spaces\ in\ this\ filename 
+
+Bandit Level 3
+Find a hidden file.
+
+Steps:
+
+Log in as bandit3.
+
+Use ls -a to show hidden files (files starting with .).
+
+Find the hidden file and read it: cat .hidden
+
+Bandit Level 4
+ Find a file with specific properties (human-readable).
+
+Steps:
+
+Log in as bandit4.
+
+List files in the inhere directory: cd inhere then ls
+
+Use file * to check file types; look for a human-readable file.
+
+Read the correct file: cat <filename>
+
+Bandit Level 5
+ Search directory structure for a file.
+
+Steps:
+
+Log in as bandit5.
+
+Navigate to the inhere directory: cd inhere/
+
+Use find to locate the file (size, type, etc.): find . -type f -size 1033c ! -executable
+
+Read the found file: cat <filename>
+
+notes:
+1) Exit after each level and use ssh to connect  ssh bandit[level no]@bandit.labs.overthewire.org -p 2220
+2) the password found by reading the file using cat function serves as the password for next one
+3)ls is used for listing all the files
+4)cat is used for reading the files 
+5)cd is used for changing the current working directory 
+6) find is used for finding a file
+
+
+

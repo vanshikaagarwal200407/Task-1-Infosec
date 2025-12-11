@@ -1,0 +1,16 @@
+The CIA triad is a foundational model in information security that stands for Confidentiality, Integrity, and Availability.​
+
+Confidentiality means ensuring that sensitive information is accessed only by authorized individuals or systems. This is achieved through measures like encryption, access controls, 
+  and authentication.​
+  Examples: Encryption, access controls, user authentication.
+
+Integrity ensures that data is accurate, complete, and trustworthy, and has not been altered by unauthorized parties. Techniques like hashing and digital signatures help maintain data integrity.​
+Examples: Hashing, digital signatures, version control, backup/recovery.
+  
+Availability guarantees that information and systems are accessible and usable by authorized users whenever needed. This involves maintaining reliable hardware, 
+network connections, and protection against denial-of-service attacks.​
+  Examples: Redundancy, disaster recovery plans, load balancing. 
+Importance
+Framework for Security: Provides a comprehensive checklist for assessing security posture and identifying gaps.
+Risk Management: Helps organizations prioritize security efforts and implement effective controls.
+Balance: Recognizes that these principles can sometimes conflict (e.g., strong confidentiality might hinder availability), requiring a tailored balance for unique business needs. 
